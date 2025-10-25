@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href=".//fontawesome-free-7.0.1-web/css/all.min.css"
+    />
+    <link rel="icon" href="./logo.png" />
+    <style>
+      .container {
+        background-color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 230px;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 20px 20px 0px 0px;
+        position: relative;
+      }
+      #hd {
+        border: 2px solid black;
+        border-radius: 20px;
+        top: -2px;
+        position: absolute;
+        left: -2px;
+      }
+      .search {
+        border: none;
+      }
+      .menu {
+        border: none;
+        margin-top: -17px;
+        margin-left: 80px;
+      }
+      .all {
+        display: flex;
+
+        border: 2px solid black;
+        position: absolute;
+        border-radius: 10px;
+        top: 170px;
+      }
+      .all select,
+      .all input {
+        border: none;
+        background-color: black;
+        color: white;
+      }
+      .all select {
+        width: 99%;
+        font-size: 10px;
+      }
+      .all input {
+        width: 99px;
+      }
+
+      .container-2 {
+        display: flex;
+        background-color: rgba(255, 247, 247, 0.858);
+        height: auto;
+        justify-content: space-around;
+        position: relative;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-content: flex-start;
+      }
+      .container-2 div {
+        width: 82px;
+        height: 130px;
+        border: 2px solid white;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        background-color: white;
+      }
+
+      .container-2 div {
+        box-shadow: 3px 3px 2px 1px rgba(117, 115, 115, 0.796);
+      }
+
+      .fxd {
+        display: flex;
+        background-color: white;
+        position: relative;
+      }
+
+      .footer {
+        background-color: rgba(3, 2, 2, 0.778);
+        color: white;
+        height: 250px;
+        font-size: 10px;
+        position: relative;
+      }
+      #email {
+        border-radius: 10px;
+      }
+      #email::placeholder {
+        color: orange;
+        box-sizing: border-box;
+        padding: 19px;
+      }
+      #line {
+        width: 95px;
+        transform: rotate(90deg);
+      }
+      .dropdown {
+        position: relative;
+        background-color: white;
+      }
+      .delement {
+        position: absolute;
+        display: none;
+        z-index: 1;
+      }
+      .dropdown:hover .delement {
+        display: block;
+        color: black;
+        top: 19px;
+        cursor: pointer;
+        background-color: rgba(242, 240, 240, 0.426);
+        width: 50px;
+      }
+      div button {
+        border: none;
+        box-sizing: border-box;
+        padding-top: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="bites (2).crop.png"
+        style="width: 100%; height: auto; max-height: 70vh"
+        id="hd"
+      />
+      <h4
+        style="
+          color: black;
+          top: 20px;
+          position: absolute;
+          right: 10%;
+          font-size: 10px;
+          background-color: white;
+          color: rgba(226, 72, 16, 0.851);
+          width: 70%;
+        "
+      >
+        Where every bites tell a story
+      </h4>
+      <div class="all">
+        <input type="text" name="search" placeholder="Search" />
+        <select>
+          <option value="" disabled selected>Menu</option>
+          <option value="cfe">Cofee</option>
+          <option value="Jollof Rice">Jollof Rice</option>
+          <option value="Stew">Stew</option>
+          <option value="Swallow">Swallow</option>
+          <option value="drinks">Drinks</option>
+        </select>
+      </div>
+      <h5
+        style="
+          color: white;
+          position: absolute;
+          top: 190px;
+          border: 1px solid rgb(245, 245, 245);
+          border-radius: 10px;
+          background-color: black;
+          box-shadow: 2px 2px 1px rgba(130, 124, 124, 0.885);
+          box-sizing: border-box;
+          padding: 6px;
+          z-index: 1;
+        "
+      >
+        Today Top Menu
+      </h5>
+      <div
+        class="dropdown"
+        style="margin-right: 85%; margin-bottom: 185px; line-height: 12px"
+      >
+        <i class="fas fa-bars"></i>
+        <div class="delement">
+          <div>Home</div>
+          <br />
+          <div style="font-size: 9px"><i class="fas fa-utensils">ORDER</i></div>
+          <br />
+          <div style="font-size: 7px"><i class="fas fa-truck">Delivery</i></div>
+          <br />
+          <div style="font-size: 7px">
+            <i class="fas fa-credit-card">Payment</i>
+          </div>
+          <div><i class="fas fa-user" style="font-size: 7px">Account</i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <div>
+        <img src="OIP.webp" style="width: 80px; height: auto" />
+        <h5 style="margin-top: 13px">
+          <i style="font-size: 5px">RATINGS: </i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="far fa-star" style="color: grey; font-size: 5px"></i><br />
+          <p style="font-size: 7px; margin-top: -16px">PRC(#10,000)</p>
+          <button
+            style="
+              font-size: 10px;
+              background-color: orange;
+              width: 82px;
+              border: none;
+            "
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+      <div>
+        <img src="download (1).jpg" style="width: 80px" />
+        <h5 style="margin-top: 13px">
+          <i style="font-size: 5px">RATINGS:</i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i><br />
+          <p style="font-size: 7px; margin-top: -16px">PRC(#25,000)</p>
+          <button
+            style="background-color: orange; font-size: 10px; width: 82px"
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+
+      <div>
+        <img src="Vegetable-and-swallow-1.jpg" style="width: 80px" />
+        <h5 style="margin-top: 13px">
+          <i style="font-size: 7px">RATINGS:</i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="far fa-star" style="color: grey; font-size: 5px"></i>
+          <p style="font-size: 7px; margin-top: -17px">PRC(#15,000)</p>
+          <button
+            style="background-color: orange; font-size: 10px; width: 82px"
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+
+      <div>
+        <img src="IMG-20251014-WA0008.jpg" style="width: 80px" />
+        <h5 style="margin-top: 14px">
+          <i style="font-size: 7px">RATINGS:</i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <p style="font-size: 7px; margin-top: -17px">PRC(#15,000)</p>
+          <button
+            style="font-size: 10px; background-color: orange; width: 82px"
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+
+      <div>
+        <img
+          src="IMG-20251014-WA0004.jpg"
+          style="width: 80px; height: 80px"
+        />
+        <h5 style="margin-top: 13px">
+          <i style="font-size: 7px">RATINGS:</i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="far fa-star" style="color: grey; font-size: 5px"></i>
+          <p style="font-size: 7px; margin-top: -17px">PRC(#7,000)</p>
+          <button
+            style="background-color: orange; width: 82px; font-size: 10px"
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+      <div>
+        <img src="IMG_0336-scaled.jpg" style="width: 80px; height: 80px" />
+        <h5 style="margin-top: 13px">
+          <i style="font-size: 7px">RATINGS:</i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="fas fa-star" style="color: gold; font-size: 5px"></i>
+          <i class="far fa-star" style="color: grey; font-size: 5px"></i>
+          <i class="far fa-star" style="color: grey; font-size: 5px"></i>
+          <p style="font-size: 7px; margin-top: -17px">PRC(#5,000)</p>
+          <button
+            style="background-color: orange; width: 82px; font-size: 10px"
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+      <div>
+        <img src="OIP (1).webp" style="width: 80px; height: 80px" />
+        <h5 style="margin-top: 15px">
+          <i style="font-size: 7px">RATINGS:</i>
+          <i class="fas fa-star" style="font-size: 5px; color: gold"></i>
+          <i class="fas fa-star" style="font-size: 5px; color: gold"></i>
+          <i class="fas fa-star" style="font-size: 5px; color: gold"></i>
+          <i class="fas fa-star" style="font-size: 5px; color: gold"></i>
+          <i class="far fa-star" style="font-size: 5px; color: grey"></i>
+          <p style="font-size: 7px; margin-top: -17px">PRC(#9,000)</p>
+          <button
+            style="background-color: orange; font-size: 10px; width: 82px"
+          >
+            ORDER NOW
+          </button>
+        </h5>
+      </div>
+    </div>
+    <div class="fxd">
+      <div class="mid"><hr style="border-color: white" /></div>
+    </div>
+    <footer class="footer">
+      <strong style="position: absolute; left: 30%"
+        >SUBCRIBE TO OUR NEWSLETTER</strong
+      >
+      <input
+        type="email"
+        name="email"
+        placeholder="input your email"
+        id="email"
+        style="
+          position: absolute;
+          bottom: 83%;
+          left: 15%;
+          width: 70%;
+          border: none;
+        "
+      />
+      <button
+        type="button"
+        style="
+          background-color: orange;
+          border-radius: 20px;
+          position: absolute;
+          top: 20%;
+          left: 35%;
+          color: white;
+          border: none;
+        "
+      >
+        SUBMIT
+      </button>
+
+      <span style="color: white; position: absolute; top: 33%; left: 10px">
+        <span style="line-height: 0px;cursor: pointer;">
+          <u>
+            <h3>ABOUT US</h3>
+            <h6>TERMS AND SERVICE</h6>
+            <h6>OUR HISTORY</h6>
+            <h6>RETURN SERVICE</h6>
+            <h6>OUR RECIPE</h6>
+            <h6>DELIVERY SERVICE</h6></u
+          ></span
+        >
+      </span>
+      <hr
+        style="
+          position: absolute;
+          top: 130px;
+          border: 1px solid white;
+          left: 39px;
+        "
+        id="line"
+      />
+      <span style="position: absolute; top: 31%; left: 110px">
+        <span style="line-height: 8px;cursor:pointer">
+          <h3>CONTACT INFO</h3>
+          <span style="font-size: 10px;">
+            <i class="fab fa-whatsapp">Whatsapp</i><br />
+            <a href="https://www.facebook.com//profile.php?id=61581017827891">
+              <i class="fab fa-facebook" style="color: white">facebook</i></a
+            ><br />
+            <i class="fab fa-twitter">Twitter</i><br />
+            <i class="fab fa-instagram">Instagram</i><br />
+            <i class="fab fa-tiktok">Tiktok</i><br
+          /></span>
+        </span>
+      </span>
+      <h4 style="position: absolute; top: 210px; left: 9px">
+        DEVELOPER CREDIT : <i class="fas fa-star" style="color: orange"></i>
+        <i class="fas fa-star" style="color: orange"></i>
+        <i class="fas fa-star" style="color: orange"></i>
+        <i class="fas fa-star" style="color: orange"></i>
+        <i class="fas fa-star" style="color: orange"></i>
+      </h4>
+    </footer>
+  </body>
+</html>

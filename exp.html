@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ .dine{width:190px;height:80px;
+ background-color: aqua;position: absolute;left:5px;
+ bottom: 120px;
+ clip-path:
+ path("m 10,40 L 70,40 A 10,10 0,0,0 110,40 L 180,40 A 10,10 0,0,1 190,50 L 190,70 A 10,10 0,0,1 calc(180 + 20),80 L 10,80 A 10,10 0,0,1 0,70 L 0,50 A 10,10 0,0,1 10,40  z");}
+
+ .ham{position: relative;}
+.bur{display:none;position: absolute;}
+.ham:hover .bur{display:block;}
+
+</style>
+<body>
+ <div class="dine"></div>
+ <div class="ham">dropdown
+ <div class="bur">   <div>hi</div>
+    <div>hello</div>
+     <div>xup</div></div>
+ </div>   
+</body>
+</html>
